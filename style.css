@@ -1,8 +1,32 @@
+@font-face {
+    font-family: 'kurale';
+    src: url(font/Kurale-Regular.ttf);
+}
+@font-face{
+    font-family: 'overpass';
+    src: url(font/Overpass-Italic-VariableFont_wght.ttf);
+}
 .row{
     display: flex;
     /* flex-direction: row; */
-    gap: 200px;
+    gap: 150px;
     list-style: none;
     /* margin-left: 10em; */
 
 }
+@media screen and (max-width: 750px){
+    .row{
+        flex-wrap: wrap;
+        gap: 90px;
+    }
+    .row li{
+        
+    }
+
+}
+ @media (min-width: 751px) and (max-width: 1400px)  {
+     .row{
+        flex-wrap: wrap;
+        gap: 90px;
+    }
+ }
